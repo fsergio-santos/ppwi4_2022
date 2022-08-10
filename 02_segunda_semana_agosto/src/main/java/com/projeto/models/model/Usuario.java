@@ -67,7 +67,7 @@ public class Usuario implements Serializable{
 		this.id = id;
 	}
 
-	@Column(name="CODIGO_UUID", length=100, nullable = false )
+	@Column(name="CODIGO_UUID", length=100 )
 	public String getCodigoUUID() {
 		return codigoUUID;
 	}
@@ -121,7 +121,7 @@ public class Usuario implements Serializable{
 	}
 
 
-	@Column(name="FALHALOGIN", length=2, nullable = false )
+	@Column(name="FALHALOGIN", length=2)
 	public Integer getFalhaLogin() {
 		return falhaLogin;
 	}
@@ -132,7 +132,7 @@ public class Usuario implements Serializable{
 
 	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	@Temporal(TemporalType.DATE)
-	@Column(name="DATACESSO", nullable = false )
+	@Column(name="DATACESSO" )
 	public Date getUltimaDataAcesso() {
 		return ultimaDataAcesso;
 	}
@@ -143,7 +143,7 @@ public class Usuario implements Serializable{
 
 	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	@Temporal(TemporalType.DATE)
-	@Column(name="DATAVENCIMENTO", nullable = false )
+	@Column(name="DATAVENCIMENTO" )
 	public Date getDataVencimentoSenha() {
 		return dataVencimentoSenha;
 	}
