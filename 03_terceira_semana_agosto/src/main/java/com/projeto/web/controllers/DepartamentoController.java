@@ -34,7 +34,7 @@ public class DepartamentoController {
 		return departamentoService.listarDepartamento();
 	}
 	
-	@GetMapping(value="listapaginada")
+	@GetMapping(value="/listapaginada")
 	public Page<Departamento> listarDepartamentoComPaginacao(Integer page, 
 			                     Integer pageSize, 
 			                     String ordem,
